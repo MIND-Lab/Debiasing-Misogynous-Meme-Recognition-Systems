@@ -1,1 +1,1 @@
-# Debiasing-Mysogynous-Meme-Recognition-Systems
+# Debiasing Mysogynous Meme Recognition Systems
