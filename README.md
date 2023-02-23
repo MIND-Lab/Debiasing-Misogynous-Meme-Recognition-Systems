@@ -1,10 +1,9 @@
 # Debiasing Mysogynous Meme Recognition Systems
 
 # Bias
-This repository contains the code developed for "Bias Analysis on Misogynistic meme detection models". 
+This repository contains the code developed for "Recognizing Misogynous Memes: Biased Models and Tricky Archetypes". 
 This repository contains several scripts to reproduce the results presented in the paper. The scripts allow both to extract image features (e.g. Clarifai tags and Azure captions) and to train the models and make predictions.
-Two training approaches are proposed, with two different partitions of training data (8 train - 1 val - 1 test and 9 train - 1 val) and an additional one based on 
-Bayesian Optimization.
+Two training approaches are proposed, with two different partitions of training data (8 train - 1 val - 1 test and 9 train - 1 val) and an additional one based on Bayesian Optimization.
 
 ___
 ## Installation
@@ -26,8 +25,8 @@ The dataset used in the realization of this project is the one proposed for the 
 The datasets are exclusively reserved for the participants of SemEval-2022 Task 5 and are not to be used freely. The data may be distributed upon request and for academic purposes only. To request the datasets, please fill out the following form: https://forms.gle/AGWMiGicBHiQx4q98
 After submitting the required info, participants will have a link to a folder containing the datasets in a zip format (trial, training and development) and the password to uncompress the files.
 
-Data provided by the challenge have been enriched with a synthetic dataset. More information about the synthetic dataset creation can be found in the [paper](citareIlPaper),
-while information for download it can be found [here](aggiungere).
+Data provided by the challenge have been enriched with a synthetic dataset. More information about the synthetic dataset creation can be found in the [paper](InProgress),
+while information for download it can be found [here](https://github.com/MIND-Lab/SemEval2022-Task-5-Multimedia-Automatic-Misogyny-Identification-MAMI-).
 
 ## Directory Structure
 The project should have the following structure:
@@ -45,21 +44,7 @@ The project should have the following structure:
 |   ├─ load_data.py
 |   ├─ model_performances.py
 |   └─ preprocessing.py
-├─ BERT_1_TrainModels_10Fold.py
-├─ BERT_1b_TrainModels_Test.py
-├─ BERT_2_Predictions_10Fold.py
-├─ BERT_2b_Predictions_Test+Syn.py
-├─ unimodal_Caption.ipynb
-├─ unimodal_Tags.ipynb
-├─ unimodal_Text.ipynb
-├─ Azure_BO.py
-├─ Azure_Captioning.py
-├─ VisualBERT_1_FeaturesExtractions.py
-├─ VisualBERT_2_AnnotationsExtractions.py
-├─ VisualBERT_3_TrainModels_10Fold.py
-├─ VisualBERT_3b_TrainModels_Test.py
-├─ VisualBERT_4_Predictions_10Fold.py
-├─ VisualBERT_4b_Predictions_Test+Syn.py
+├─ ...
 └─ requirements.txt
 ```
 Some notes:
@@ -71,10 +56,6 @@ Some notes:
 
 ___
 ## Running
-All the scripts ('.py') can be run via command line using the following command:
-```
-python ./ScriptName.py
-```
 All the scripts based on Azure require Azure captionings that can be obtained through `Azure_Captioning.py`; similarly, all clarifai-based scripts require clarifai tags which can be obtained through the `Clarifai_Tagging.py` script.
 
 ### Features Extractions
@@ -130,7 +111,7 @@ Some notes:
 
 ### 10-Fold on Training data
 The first approach is based on a 10Fold cross validation performed on training data (8 fold training, 1 fold validation, 1 fold test). This approach allows evaluating models performance on training data.
-Scripts referring to this approach are identified by the label `10Fold`. (e.g. `BERT_1_TrainModels_10Fold.py` for BERT-text)
+Scripts referring to this approach are identified by the label `10Fold`. (e.g. `BERT_1_TrainModels_10Fold.py` for BERT-text). Additional information about the procedure can be found in the paper.
 
 ### Candidate Bias Elements
 Candidate Bias terms and tags are computed through a statistic-mathematical approach as shown in the paper.
