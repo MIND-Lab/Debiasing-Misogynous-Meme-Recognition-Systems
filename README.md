@@ -125,5 +125,34 @@ training data.
 
 The 5 terms with the higher/lower score are selected as Candidate Bias Terms and saved in the file `./Data/IdentityTerms.txt`
 
+## Citation
+If you found our work useful, please cite our papers:
+
+[Recognizing misogynous memes: Biased models and tricky archetypes](https://www.sciencedirect.com/science/article/pii/S030645732300211X)
+
+```
+@article{rizzi2023recognizing,
+  title={Recognizing misogynous memes: Biased models and tricky archetypes},
+  author={Rizzi, Giulia and Gasparini, Francesca and Saibene, Aurora and Rosso, Paolo and Fersini, Elisabetta},
+  journal={Information Processing \& Management},
+  volume={60},
+  number={5},
+  pages={103474},
+  year={2023},
+  publisher={Elsevier}
+}
+```
+
+[SemEval-2022 Task 5: Multimedia Automatic Misogyny Identification](https://aclanthology.org/2022.semeval-1.74/)
+
+```
+@inproceedings{fersini2022semeval,
+  title={SemEval-2022 Task 5: Multimedia automatic misogyny identification},
+  author={Fersini, Elisabetta and Gasparini, Francesca and Rizzi, Giulia and Saibene, Aurora and Chulvi, Berta and Rosso, Paolo and Lees, Alyssa and Sorensen, Jeffrey},
+  booktitle={Proceedings of the 16th International Workshop on Semantic Evaluation (SemEval-2022)},
+  pages={533--549},
+  year={2022}
+}
+```
 
 
